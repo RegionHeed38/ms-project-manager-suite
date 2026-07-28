@@ -1,0 +1,87 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0d2a4a"/>
+<stop offset="55%" stop-color="#153f6b"/>
+<stop offset="100%" stop-color="#0a2038"/>
+</linearGradient>
+<linearGradient id="barA" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#2ea3ff"/>
+<stop offset="100%" stop-color="#1470c4"/>
+</linearGradient>
+<linearGradient id="barB" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#5fd0d9"/>
+<stop offset="100%" stop-color="#1c8e9c"/>
+</linearGradient>
+<linearGradient id="barC" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#8fd6ff"/>
+<stop offset="100%" stop-color="#2f7fc2"/>
+</linearGradient>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#4fc3f7" stop-opacity="0.35"/>
+<stop offset="100%" stop-color="#4fc3f7" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="panel" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+<stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+<circle cx="980" cy="90" r="220" fill="url(#glow)"/>
+
+<!-- faint grid representing calendar/timeline -->
+<g stroke="#ffffff" stroke-opacity="0.05">
+<line x1="0" y1="60" x2="1200" y2="60"/>
+<line x1="0" y1="120" x2="1200" y2="120"/>
+<line x1="0" y1="180" x2="1200" y2="180"/>
+<line x1="0" y1="240" x2="1200" y2="240"/>
+<line x1="0" y1="300" x2="1200" y2="300"/>
+<line x1="150" y1="0" x2="150" y2="360"/>
+<line x1="350" y1="0" x2="350" y2="360"/>
+<line x1="550" y1="0" x2="550" y2="360"/>
+<line x1="750" y1="0" x2="750" y2="360"/>
+<line x1="950" y1="0" x2="950" y2="360"/>
+<line x1="1150" y1="0" x2="1150" y2="360"/>
+</g>
+
+<!-- Gantt-chart cluster, right side, layered depth -->
+<g>
+<rect x="760" y="150" width="360" height="150" rx="14" fill="url(#panel)" stroke="#ffffff" stroke-opacity="0.08"/>
+
+<rect x="790" y="175" width="90" height="14" rx="6" fill="url(#barA)"/>
+<rect x="790" y="205" width="150" height="14" rx="6" fill="url(#barB)"/>
+<rect x="900" y="205" width="70" height="14" rx="6" fill="url(#barB)" opacity="0.7"/>
+<rect x="850" y="235" width="200" height="14" rx="6" fill="url(#barC)"/>
+<rect x="790" y="265" width="120" height="14" rx="6" fill="url(#barA)" opacity="0.8"/>
+<rect x="930" y="265" width="90" height="14" rx="6" fill="url(#barC)" opacity="0.6"/>
+
+<!-- connecting dependency lines -->
+<path d="M880 182 L900 182 L900 212" fill="none" stroke="#8fd6ff" stroke-opacity="0.5" stroke-width="2"/>
+<path d="M940 212 L960 212 L960 242" fill="none" stroke="#8fd6ff" stroke-opacity="0.5" stroke-width="2"/>
+<path d="M1050 242 L1070 242 L1070 272" fill="none" stroke="#8fd6ff" stroke-opacity="0.5" stroke-width="2"/>
+</g>
+
+<!-- small checklist icons top-left decorative -->
+<g transform="translate(70,60)">
+<rect x="0" y="0" width="26" height="26" rx="5" fill="none" stroke="#5fd0d9" stroke-width="2" opacity="0.5"/>
+<path d="M5 13 L11 19 L21 6" fill="none" stroke="#5fd0d9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+</g>
+
+<!-- subtle diagonal accent line -->
+<line x1="0" y1="330" x2="1200" y2="250" stroke="#2ea3ff" stroke-opacity="0.12" stroke-width="2"/>
+<line x1="0" y1="345" x2="1200" y2="265" stroke="#5fd0d9" stroke-opacity="0.08" stroke-width="2"/>
+
+<!-- headline -->
+<text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="56" fill="#f4fbff">
+<tspan x="60" y="150" textLength="700" lengthAdjust="spacingAndGlyphs">Microsoft Project</tspan>
+<tspan x="60" y="212" textLength="560" lengthAdjust="spacingAndGlyphs">Full Version Download</tspan>
+</text>
+
+<!-- tagline -->
+<text x="60" y="256" font-family="'Segoe UI', Arial, sans-serif" font-size="23" fill="#bfe3f7" textLength="880" lengthAdjust="spacingAndGlyphs">Download, install, activate — Microsoft Project full version, one package</text>
+
+<!-- small accent bar under headline -->
+<rect x="60" y="272" width="140" height="6" rx="3" fill="url(#barA)"/>
+<rect x="205" y="272" width="70" height="6" rx="3" fill="url(#barB)" opacity="0.8"/>
+</svg>
